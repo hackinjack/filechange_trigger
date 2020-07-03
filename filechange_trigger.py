@@ -92,6 +92,6 @@ except Exception:
 # Now set the watch 
 handler = EventHandler()
 notifier = pyinotify.Notifier(wm, handler)
-wdd = wm.add_watch('/tmp/text.txt', mask, rec=True)
+wdd = wm.add_watch(sys.argv[1], mask, rec=True)
 
 notifier.loop()
