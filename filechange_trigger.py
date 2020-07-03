@@ -95,3 +95,8 @@ notifier = pyinotify.Notifier(wm, handler)
 wdd = wm.add_watch(sys.argv[1], mask, rec=True)
 
 notifier.loop()
+
+'''
+## TODO ## daemonize the thing 
+See https://web.archive.org/web/20160305151936/http://www.jejik.com/articles/2007/02/a_simple_unix_linux_daemon_in_python/
+'''
